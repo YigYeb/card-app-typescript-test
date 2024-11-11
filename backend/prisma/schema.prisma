@@ -14,5 +14,6 @@ model Entry {
   id          String   @id @default(uuid())
   title       String
   description String
+  scheduled_for String
   created_at  DateTime
 }
