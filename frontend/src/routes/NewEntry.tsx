@@ -66,7 +66,7 @@ export default function NewEntry() {
           value={new Date(newEntry.created_at).toISOString().split("T")[0]}
           onChange={handleInputChange}
         />
-      </div>  
+      </div>
       <button
         onClick={(e) => {
           handleSend(e);

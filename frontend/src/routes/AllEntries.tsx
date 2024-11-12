@@ -29,8 +29,12 @@ export default function AllEntries() {
             className="bg-gray-300 dark:bg-neutral-500 shadow-md shadow-gray-500 m-3 p-4 rounded flex flex-col justify-between"
           >
             <h1 className="dark:text-white font-bold text-sm md:text-lg">{entry.title}</h1>
-            <p className="dark:text-white text-center text-lg font-light md:mt-2 md:mb-4 mt-1 mb-3">{entry.description}</p>
-            <p className="dark:text-white text-center text-lg font-light md:mt-2 md:mb-4 mt-1 mb-3">Scheduled For {new Date(entry.scheduled_for.toString()).toLocaleDateString()}</p>
+            <p className="dark:text-white text-center text-lg font-light md:mt-2 md:mb-4 mt-1 mb-3">
+              {entry.description}
+            </p>
+            <p className="dark:text-white text-center text-lg font-light md:mt-2 md:mb-4 mt-1 mb-3">
+              Scheduled For {new Date(entry.scheduled_for.toString()).toLocaleDateString()}
+            </p>
             <section className="flex items-center justify-between flex-col md:flex-row pt-2 md:pt-0">
               <div className="flex justify-center">
                 <button

@@ -5,7 +5,7 @@ import { EntryContext } from "../utilities/globalContext";
 
 export default function EditEntry() {
   const { id } = useParams();
-  const emptyEntry: Entry = { title: "", description: "",scheduled_for: new Date(), created_at: new Date() };
+  const emptyEntry: Entry = { title: "", description: "", scheduled_for: new Date(), created_at: new Date() };
 
   const { updateEntry, entries } = useContext(EntryContext) as EntryContextType;
   const [newEntry, setNewEntry] = useState<Entry>(emptyEntry);
